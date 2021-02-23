@@ -92,9 +92,9 @@
         width: 100%;
     }
 
-    .col,
-    [class*="col-"],
-    [class^='col-'] {
+    .col:not([class*='maintain-grid-width']),
+    [class*="col-"]:not([class*='maintain-grid-width']),
+    [class^='col-']:not([class*='maintain-grid-width']) {
         flex: 0 1 100%;
         max-width: 100%;
     }
